@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listTransportation"
+    android:layout_margin="30dp">
+    <TextView
+        android:id="@+id/title_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis - Jenis Transportasi"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_list"
+        android:layout_marginTop="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rw_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_of_list"/>
+    </ScrollView>
+</RelativeLayout>
